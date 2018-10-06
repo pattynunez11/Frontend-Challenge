@@ -10,6 +10,26 @@ body {
   width: 100%;
   background-color: rgb(44, 44, 44);
 }
+h1 {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1;
+  color: #EBEEF1;
+}
+h2 {
+  font-weight: 400;
+  font-size: 19px;
+  padding: 10px 20px;
+  color: #EBEEF1;
+}
+
+h3{
+  font-weight: 300;
+  font-size: 13px;
+  color: #8DB5D4;
+  line-height: 1.5;
+}
+/* top NavBAR main css */
 nav {
   margin: 0 auto;
   padding: 12px 0 15px 15px;
@@ -25,128 +45,90 @@ nav {
  text-align: center;
  padding: 10px
 }
-.nav-content{
-  width: 80%;
-  float: left;
-    color: #EBEEF1;
-}
-.nav-content h3{
-  font-weight: 300;
-  font-size: 13px;
-  color: #8DB5D4;
-  line-height: 1.5;
-}
-.nav-content h1{
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 1;
-}
 
 .nav-left-icon{
   width:10%;
   float:left;
   padding: 15px 0;
 }
+.fa-chevron-left {
+  font-size: 24px;
+  color: #EBEEF1;
+}
 .nav-right-icon{
   width:10%;
   float: right;
   padding: 15px 0;
 }
+.fa-redo-alt {
+font-size: 23px;
+color: #EBEEF1;
+}
 
+/* END---------top NavBAR main css */
+
+/* container for rest of app interface css */
 .container {
   margin: 0 auto;
   width: 375px;
   height: 667px;
   overflow-y: scroll;
 }
-
+/* SECTION ROW CSS */
 .route-data-list {
   padding-top: 66px;
   background-color: #19374D;
   width: 100%;
 }
-.location{
-  display: block;
-  height: 65px;
-  border-bottom: .5px solid rgba(187, 187, 193, .27);
-  padding: 16.25px 20px 60px 20px;
-}
 
- .location:hover{
-  background-color: rgba(187, 187, 193, .05);
-}
-
+/* sub header for direction of bus, SouthBOUND, EASTBOUND etc... */
 .sub-header {
-  display: block;
-  width: 100%;
   height: 40px;
   background: rgba(255, 255, 255, 0.27);
 }
 
-.content{
-  width: 60%;
-  float: left;
-  color: #EBEEF1;
-}
-.left-box-content {
-  width: 30%;
-  float: left;
+/* Box for CONTENT */
+.row{
+  width: 100%;
   height: 65px;
-  padding: 10px 20px 60px 20px;
+  border-bottom: .5px solid rgba(187, 187, 193, .27);
+  padding: 18px 40px 60px 16px;
 }
+
+.row:hover{
+ background-color: rgba(187, 187, 193, .05);
+}
+
+/* main route information content*/
+
 .left-box-num {
   width: 62px;
   height: 39px;
-}
-.blue-left-box-num {
+  float: left;
   background-color: #4287BD;
-  padding: 13px 0px 13px 0px;
+  padding-top: 10px;
   border-radius: 4px;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   color: #EBEEF1;
 }
-.yellow-left-box-num {
+.yellow {
   background-color: #D1A437;
-  padding: 13px 0px 13px 0px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  color: #EBEEF1;
 }
-.red-left-box-num {
+.red {
   background-color: #C44242;
-  padding: 13px 0px 13px 0px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  color: #EBEEF1;
 }
 
-.content h1 {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 1;
-}
-.content h2 {
-  font-weight: 400;
-  font-size: 19px;
-  padding: 10px 20px;
+.location{
+  float: left;
+  padding: 3px 3px 0px 16px;
 }
 
-.content h3{
-  font-weight: 300;
-  font-size: 13px;
-  color: #8DB5D4;
-  line-height: 1.5;
-}
+/* END main route information content*/
 
-.bottom-tab{
-  display: block;
-  width: 100%;
+/* bottom tabs */
+footer {
   height: 54px;
   color: #EBEEF1;
   font-size: 14px;
@@ -154,27 +136,29 @@ nav {
   padding: 15px 20px;
 }
 
-.bottom-tab-content{
-  border: 1px solid #4287BD;
-  border-radius: 4px;
-  height: 27px;
-}
-.bottom-left{
-  float: left;
-  border-right: 1px solid #4287BD;
+.bottom-left {
   padding: 6px 15px;
-  width: 30.33%;
-  background-color: #8DB5D4;
+  width: 33.33%;
+  float: left;
+  border: 1px solid #4287BD;
+  border-radius: 4px 0px 0px 4px;
+/*  background-color: #8DB5D4;*/
 }
-.bottom-center-icon{
+.fa-home{
   float: left;
   width: 33.33%;
-  padding: 2px 50px;
+  padding: 3px 50px;
+  font-size: 20px;
+  border-top: 1px solid #4287BD;
+  border-bottom: 1px solid #4287BD;
 }
 
 .bottom-right{
   float: right;
-  padding: 6px 0px 5px 25px;
-  border-left: 1px solid #4287BD;
+  padding: 7px 0px 5px 25px;
+  border: 1px solid #4287BD;
+  border-radius: 0px 4px 4px 0px;
   width: 33.33%;
 }
+
+/* END--->container for rest of app interface css */

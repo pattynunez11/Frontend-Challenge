@@ -3,173 +3,137 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <!---CONTAINER--->
     <section class="container">
       <nav>
         <div class="nav-left-icon">
-          <img src="../images/arrow-left.png" alt="left arrow to go to prior page" />
+          <i class="fas fa-chevron-left"></i>
         </div>
         <div class="nav-right-icon">
-          <img src="../images/refresh.png" alt="refresh page" />
+          <i class="fas fa-redo-alt"></i>
         </div>
       <div class="nav-subheader">
-        <div class="nav-content">
           <h1>Route Data</h1>
           <h3>Washingtion St / State St</h3>
-        </div>
       </div>
-
       </nav>
+<!---CONTAINER FOR DATA LIST--->
       <section class="route-data-list">
 <!--EASTBOUND--->
         <div class="sub-header">
-          <div class="content">
             <h2>Eastbound</h2>
           </div>
         </div>
+<!--Start info-->
+        <ul class="row">
+          <li class="left-box-num">124</li>
+          <li class="location">
+              <h1>Every 10 minutes</h1>
+              <h3>Navy Pier</h3>
+          </li>
+        </ul>
+
+        <ul class="row">
+          <li class="left-box-num">60</li>
+          <li class="location">
+             <h1>Every 10 minutes</h1>
+             <h3>Randolph / Harbor Dr</h3>
+          </li>
+       </ul>
 <!--END EASTBOUND--->
-        <div class="left-box-content">
-           <div class="blue-left-box-num">
-           <p>124</p>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h1>Every 10 minutes</h1>
-            <h3>Navy Pier</h3>
-          </div>
-        </div>
-        <div class="left-box-content">
-           <div class="blue-left-box-num">
-           <p>60</p>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h1>Every 10 minutes</h1>
-            <h3>Randolph / Harbor Dr</h3>
-          </div>
-        </div>
+
 <!--NorthBOUND--->
         <div class="sub-header">
-          <div class="content">
             <h2>Northbound</h2>
-          </div>
         </div>
-<!--END NorthBOUND--->
-        <div class="left-box-content">
-           <div class="blue-left-box-num">
-           <p>151</p>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
+<!--start info-->
+        <ul class="row">
+          <li class="left-box-num">151</li>
+          <li class="location">
             <h1>Every 16 minutes</h1>
             <h3>Devon / Clark</h3>
-          </div>
-        </div>
+          </li>
+        </ul>
+<!--END NorthBOUND--->
+
 <!--SouthBOUND--->
         <div class="sub-header">
-          <div class="content">
             <h2>Southbound</h2>
-          </div>
         </div>
-<!--END SouthBOUND--->
-        <div class="left-box-content">
-           <div class="blue-left-box-num">
-           <p>124</p>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
+<!--start info--->
+        <ul class="row">
+          <li class="left-box-num">124</li>
+          <li class="location">
             <h1>Every 10 minutes</h1>
             <h3>Navy Pier</h3>
-          </div>
-        </div>
-        <div class="left-box-content">
-           <div class="blue-left-box-num">
-           <p>J14</p>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h1>Every 15 minutes</h1>
-            <h3>103rd / Stony Island</h3>
-          </div>
-        </div>
+          </li>
+        </ul>
+
+        <ul class="row">
+           <li class="left-box-num">J14</li>
+           <li class="location">
+             <h1>Every 15 minutes</h1>
+             <h3>103rd / Stony Island</h3>
+           </li>
+        </ul>
+<!--END SouthBOUND--->
+
 <!--Reroute--->
         <div class="sub-header">
-          <div class="content">
             <h2>Reroute</h2>
-          </div>
         </div>
-<!--END Reroute--->
-        <div class="left-box-content">
-           <div class="yellow-left-box-num">
-           <p>6x</p>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h1>N/A</h1>
+<!--start info--->
+      <ul class="row">
+        <li class="left-box-num yellow">6x</li>
+        <li class="location">
+           <h1>N/A</h1>
             <h3>Jackson Park Express</h3>
-          </div>
-        </div>
+        </li>
+      </ul>
+<!--END Reroute--->
 
 <!--OutOfService--->
         <div class="sub-header">
-          <div class="content">
             <h2>Out Of Service</h2>
-          </div>
         </div>
-<!--END OutofService--->
-        <div class="left-box-content">
-           <div class="red-left-box-num">
-           <p>4</p>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
-            <h1>Resumes 12:10am</h1>
-            <h3>Cottage Grove</h3>
-          </div>
-        </div>
-        <div class="left-box-content">
-           <div class="red-left-box-num">
-           <p>20</p>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
+<!--start info--->
+        <ul class="row">
+          <li class="left-box-num red">4</li>
+           <li class="location">
+             <h1>Resumes 12:10am</h1>
+             <h3>Cottage Grove</h3>
+          </li>
+        </ul>
+        <ul class="row">
+          <li class="left-box-num red">20</li>
+          <li class="location">
             <h1>Resumes 12:10am</h1>
             <h3>Madison</h3>
-          </div>
-        </div>
-        <div class="left-box-content">
-           <div class="red-left-box-num">
-           <p>157</p>
-          </div>
-        </div>
-        <div class="location">
-          <div class="content">
+          </li>
+        </ul>
+        <ul class="row">
+          <li class="left-box-num red">157</li>
+          <li class="location">
             <h1>Resumes 6:00am</h1>
             <h3>Streeterville / Taylor</h3>
-          </div>
-        </div>
-<!--bottom-tab--->
-        <div class="bottom-tab">
-          <div class="bottom-tab-content">
+          </li>
+        </ul>
+<!--END OutofService--->
+
+
+      <footer>
             <div class="bottom-left">Schedule</div>
-            <div class="bottom-center-icon"><img src="../images/hm-icon.png" alt="home button" /></div>
+            <i class="fas fa-home"></i>
             <div class="bottom-right">Live Map</div>
-          </div>
-        </div>
-<!--end-bottom-tab--->
-        </div>
+      </footer>
       </section>
+<!---END CONTAINER Data Route--->
     </section>
+<!---END CONTAINER--->
   </body>
 </html>
