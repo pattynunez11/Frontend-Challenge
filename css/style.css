@@ -142,13 +142,14 @@ footer {
   float: left;
   border: 1px solid #4287BD;
   border-radius: 4px 0px 0px 4px;
-/*  background-color: #8DB5D4;*/
+  background-color: #8DB5D4;
 }
 .fa-home{
   float: left;
   width: 33.33%;
-  padding: 3px 50px;
+  padding: 3px 0px;
   font-size: 20px;
+  text-align: center;
   border-top: 1px solid #4287BD;
   border-bottom: 1px solid #4287BD;
 }
